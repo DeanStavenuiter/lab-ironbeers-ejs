@@ -1,0 +1,12 @@
+<div class="main-beers">
+<%- include("./partials/beer.ejs") %>
+  <% beers.forEach(beer => { %>
+  <h3>Food Pairing</h3>
+  <ul>
+    <% beer.food_pairing.forEach(element => { %>
+     <li><%=element%></li>
+    <% }) %> 
+  </ul>
+  <p><%=beer.brewers_tips%></p>
+  %> <% }) %>
+</div>
